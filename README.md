@@ -1,93 +1,55 @@
-# MM Solutions
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Vitthal-Jauhari/MM-Solutions)
+# MM Solutions Website
 
-This repository contains the source code for the official website of MM Solutions, a Delhi-based consultancy firm specializing in ISO certifications, process implementation, and company registration services. The site is designed to provide comprehensive information about the company's offerings, showcase its expertise, and generate leads through interactive enquiry forms.
+This repository contains the website I built for MM Solutions, an ISO consultancy firm. The project focuses on presenting services clearly, building trust through company and certification information, and capturing enquiries through structured forms.
 
-The project is a modern, responsive web application built with Next.js, TypeScript, and styled with Tailwind CSS, utilizing the `shadcn/ui` component library for a clean and consistent user interface.
+## Project Highlights
 
-## Features
-
-- **Comprehensive Service Information**: Detailed pages for a wide range of ISO standards (e.g., ISO 9001, 14001, 27001) and other certifications (HACCP, GMP, SA 8000).
-- **In-Depth Company Profile**: Dedicated sections covering the company's corporate profile, accreditations, policies, training services, and certification methodology.
-- **Interactive Forms**: User-friendly forms for general contact and specific service enquiries, featuring client-side validation, CAPTCHA, and success animations.
-- **Responsive Design**: A fully responsive layout with a collapsible mobile navigation menu ensures a seamless experience across desktops, tablets, and mobile devices.
-- **Modern UI/UX**: Built with a clean aesthetic, smooth animations, and a consistent component-based architecture using React and `shadcn/ui`.
-- **High-Performance**: Leverages Next.js for server-side rendering and static site generation, ensuring fast load times and excellent SEO.
+- Service pages for ISO and other certification offerings
+- Company information pages (profile, methodology, policies, etc.)
+- Contact and enquiry flows with validation and CAPTCHA
+- Responsive layout for desktop and mobile
+- Component-based UI built for maintainability
 
 ## Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/) (App Router)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components**: [shadcn/ui](https://ui.shadcn.com/), [Radix UI](https://www.radix-ui.com/)
-- **Form Management**: [React Hook Form](https://react-hook-form.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Schema Validation**: [Zod](https://zod.dev/)
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui + Radix UI
+- React Hook Form + Zod
+- Framer Motion
 
-## Project Structure
+## Folder Overview
 
-The repository is organized following standard Next.js conventions:
+- `app/`: Route pages and layouts
+- `components/`: Reusable UI and feature components
+- `hooks/`: Custom React hooks
+- `lib/`: Shared utilities
+- `public/`: Static assets
+- `styles/`: Global styling and Tailwind-related styles
 
--   `app/`: Contains all the page routes and layouts using the Next.js App Router.
-    -   `/about`: Static pages related to the company's profile.
-    -   `/iso-certificates`: Individual pages detailing each ISO certification service.
-    -   `/other-certificates`: Pages for non-ISO certifications like HACCP, GMP, etc.
-    -   `/contact` & `/enquire`: Pages with forms for user interaction.
-    -   `page.tsx`: The main homepage component.
-    -   `layout.tsx`: The root layout for the application.
--   `components/`: Contains all reusable React components.
-    -   `ui/`: Base UI components from `shadcn/ui`.
-    -   `header.tsx`, `footer.tsx`: Site-wide header and footer.
-    -   `contact-form.tsx`, `enquire-modal.tsx`: Components for handling user submissions.
-    -   `about-layout.tsx`: A shared layout for informational subpages, providing a consistent structure.
--   `lib/`: Core utility functions, including the `cn` helper for Tailwind CSS classes.
--   `hooks/`: Custom React hooks, such as `use-toast` and `use-mobile`.
-
-## Getting Started
-
-To run this project locally, follow the steps below.
+## Run Locally
 
 ### Prerequisites
 
--   Node.js (v18.0 or later)
--   pnpm package manager
+- Node.js 18+
+- pnpm
 
-### Installation
+### Setup
 
-1.  Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/vitthal-jauhari/MM-Solutions.git
-    ```
+```bash
+pnpm install
+```
 
-2.  Navigate to the project directory:
-    ```bash
-    cd MM-Solutions
-    ```
-
-3.  Install the dependencies using `pnpm`:
-    ```bash
-    pnpm install
-    ```
-
-### Running the Development Server
-
-Start the Next.js development server:
+### Development
 
 ```bash
 pnpm dev
 ```
 
-Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see the application in action.
-
-### Building for Production
-
-To create a production-ready build of the application, run:
+### Production
 
 ```bash
 pnpm build
-```
-
-The optimized static files will be generated in the `.next` directory. You can then start the production server with:
-
-```bash
 pnpm start
+```
