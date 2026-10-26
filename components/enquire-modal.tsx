@@ -63,14 +63,20 @@ export default function EnquireModal({ isOpen, onClose }: EnquireModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[500px] p-0 overflow-hidden">
+      <DialogContent className="sm:max-w-[500px] p-0 overflow-hidden" showCloseButton={false}>
         <div className="bg-gradient-to-r from-[#033097] to-blue-600 text-white p-6">
           <DialogHeader>
             <div className="flex items-center justify-between">
               <DialogTitle className="text-xl font-bold text-white">
                 {isSuccess ? "Thank You!" : "Quick Enquiry"}
               </DialogTitle>
-              <Button variant="ghost" size="sm" onClick={onClose} className="text-white hover:bg-white/20 h-8 w-8 p-0">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onClose}
+                aria-label="Close quick enquiry"
+                className="text-white hover:bg-white/20 h-8 w-8 p-0"
+              >
                 <X className="h-4 w-4" />
               </Button>
             </div>
