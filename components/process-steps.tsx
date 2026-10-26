@@ -1,12 +1,12 @@
 export default function ProcessSteps() {
-const steps = [
-  { number: "1", title: "🗣️ Consultation", color: "border-red-400 text-red-500" },
-  { number: "2", title: "💬 Get Quotation", color: "border-blue-400 text-blue-500" },
-  { number: "3", title: "📝 Submit Docs", color: "border-blue-600 text-blue-600" },
-  { number: "4", title: "📋 Audit & Review", color: "border-green-500 text-green-500" },
-  { number: "5", title: "✅ Approval & Payment", color: "border-yellow-500 text-yellow-500" },
-  { number: "6", title: "🎓 Get Certified", color: "border-blue-600 text-blue-600" }
-];
+  const steps = [
+    { number: "1", title: "Consultation", color: "border-red-400 text-red-500" },
+    { number: "2", title: "Get Quotation", color: "border-blue-400 text-blue-500" },
+    { number: "3", title: "Submit Docs", color: "border-blue-600 text-blue-600" },
+    { number: "4", title: "Audit & Review", color: "border-green-500 text-green-500" },
+    { number: "5", title: "Approval & Payment", color: "border-yellow-500 text-yellow-500" },
+    { number: "6", title: "Get Certified", color: "border-blue-600 text-blue-600" }
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-b from-blue-50 to-purple-50">
